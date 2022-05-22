@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DataToSave : MonoBehaviour
-{    
+{
     public static DataToSave instance;
     public string Name;
     private void Awake()
@@ -16,4 +16,5 @@ public class DataToSave : MonoBehaviour
         instance = this;
         DontDestroyOnLoad(gameObject);
     }
+
 }
